@@ -11,7 +11,7 @@ const PRODUCTS = [
     description:
       "Elegant jewellery bag made from 100% organic cotton. Perfect for storing and carrying your valuable pieces.",
     price: 19.99,
-    image: "/images/jewellerybags.jpeg",
+    image: "/images/bag1(jewellery).png",
     category: "Jewellery",
     tags: ["Organic", "Cotton", "Premium"],
   },
@@ -34,16 +34,6 @@ const PRODUCTS = [
     image: "/images/bag9(opticals).jpeg",
     category: "Accessories",
     tags: ["Sunglasses", "Microfiber", "Protection"],
-  },
-  {
-    id: "eco-sweet-1",
-    title: "Bakery Gift Bag",
-    description:
-      "Beautiful gift bag perfect for bakery items and sweet treats. Made with food-safe materials.",
-    price: 14.99,
-    image: "/images/bag13(sweet).jpeg",
-    category: "Gift",
-    tags: ["Bakery", "Food-safe", "Presentation"],
   },
   {
     id: "eco-shop-1",
