@@ -21,11 +21,11 @@ export default function Home() {
         <div className="container-custom relative z-10 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 text-white">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-              Eco-Friendly Custom Bags for Conscious Businesses
+              Luxury Eco-Friendly Bags for Premium Brands
             </h1>
             <p className="text-base sm:text-lg">
-              Elevate your brand with sustainable, stylish bags that make a
-              statement and protect our planet.
+              Elevate your brand with our elegant, sustainable bags that combine
+              style with environmental responsibility.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

@@ -6,14 +6,84 @@ import ProductCard from "../../components/productCard";
 // Sample product data
 const PRODUCTS = [
   {
-    id: "eco-jewellery-1",
-    title: "Jewellery Premium Bag",
+    id: "eco-gift-premium-1",
+    title: "Premium Gift Bag",
     description:
-      "Elegant jewellery bag made from 100% organic cotton. Perfect for storing and carrying your valuable pieces.",
+      "Elegant gift bag with satin ribbon and gradient design. Perfect for special occasions and luxury presentations.",
+    price: 14.99,
+    image: "/images/gift bag1.jpeg",
+    category: "Gift",
+    tags: ["Premium", "Elegant", "Occasion"],
+  },
+  {
+    id: "eco-clothing-premium-1",
+    title: "Designer Clothing Bag",
+    description:
+      "High-quality clothing bag with sturdy handles. Ideal for boutiques and fashion retailers.",
+    price: 12.99,
+    image: "/images/clothing bags.jpeg",
+    category: "Clothing",
+    tags: ["Fashion", "Retail", "Durable"],
+  },
+  {
+    id: "eco-gift-premium-2",
+    title: "Luxury Gift Pouch",
+    description:
+      "Beautiful gift pouch with bow design. Perfect for small gifts and jewelry items.",
+    price: 9.99,
+    image: "/images/gift bag2.jpeg",
+    category: "Gift",
+    tags: ["Luxury", "Small", "Bow"],
+  },
+  {
+    id: "eco-gift-collection-1",
+    title: "Gift Bag Collection",
+    description:
+      "Elegant white gift bags with gold accents. Comes in different sizes for various gifting needs.",
+    price: 24.99,
+    image: "/images/gifts bags.jpeg",
+    category: "Gift",
+    tags: ["Collection", "Elegant", "Gold"],
+  },
+  {
+    id: "eco-jewellery-premium-1",
+    title: "Luxury Gold Jewellery Bag",
+    description:
+      "Gold-colored luxury bag specifically designed for jewelry shops and boutiques. Features elegant design and sturdy handles.",
     price: 19.99,
-    image: "/images/bag1(jewellery).png",
+    image: "/images/jewellery bag3.jpeg",
     category: "Jewellery",
-    tags: ["Organic", "Cotton", "Premium"],
+    tags: ["Gold", "Luxury", "Branded"],
+  },
+  {
+    id: "eco-jewellery-premium-2",
+    title: "Royal Blue Jewellery Bag",
+    description:
+      "Royal blue jewellery bag with gold embossing and crown design. Perfect for upscale jewelry retailers.",
+    price: 19.99,
+    image: "/images/jewelllery bag2.jpeg",
+    category: "Jewellery",
+    tags: ["Blue", "Royal", "Branded"],
+  },
+  {
+    id: "eco-jewellery-premium-3",
+    title: "Emerald Jewellery Shopping Bag",
+    description:
+      "Deep green jewellery shopping bag with gold accents. Elegant and eco-friendly option for luxury jewelry stores.",
+    price: 18.99,
+    image: "/images/jwewllerybag1.jpeg",
+    category: "Jewellery",
+    tags: ["Green", "Gold", "Luxury"],
+  },
+  {
+    id: "eco-jewellery-premium-4",
+    title: "Luxury Jute Jewelry Tote",
+    description:
+      "Handcrafted jute jewelry tote with premium finishes. Sustainable luxury for high-end jewelry retailers.",
+    price: 22.99,
+    image: "/images/jewellery jute bag.jpeg",
+    category: "Jewellery",
+    tags: ["Jute", "Sustainable", "Luxury"],
   },
   {
     id: "eco-accessories-2",
@@ -54,16 +124,6 @@ const PRODUCTS = [
     image: "/images/clothingbag.jpeg",
     category: "Clothing",
     tags: ["Sustainable", "Durable", "Travel"],
-  },
-  {
-    id: "eco-gift-1",
-    title: "Jute Gift Bag Set",
-    description:
-      "Set of 3 natural jute gift bags in various sizes. Perfect for sustainable gift-giving.",
-    price: 24.99,
-    image: "/images/bag4(gift).jpeg",
-    category: "Gift",
-    tags: ["Jute", "Natural", "Set"],
   },
   {
     id: "eco-jewellery-2",
@@ -114,16 +174,6 @@ const PRODUCTS = [
     image: "/images/bag5(cosmetics).jpeg",
     category: "Accessories",
     tags: ["Cosmetics", "Travel", "Waterproof"],
-  },
-  {
-    id: "eco-clothing-3",
-    title: "Delicate Garment Bag",
-    description:
-      "Breathable bag for delicate clothing items. Protects from dust while allowing airflow.",
-    price: 19.99,
-    image: "/images/bag7.jpeg",
-    category: "Clothing",
-    tags: ["Delicate", "Breathable", "Dust-proof"],
   },
   {
     id: "eco-shopping-3",
