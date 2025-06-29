@@ -17,8 +17,8 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-      <div className="relative w-full h-64">
-        <Image src={image} alt={title} fill className="object-cover" />
+      <div className="relative w-full h-64 bg-gray-100 flex items-center justify-center">
+        <Image src={image} alt={title} fill className="object-contain" />
         <div className="absolute top-4 left-4 bg-eco-green-500 text-white px-2 py-1 rounded-md text-sm font-medium">
           {category}
         </div>

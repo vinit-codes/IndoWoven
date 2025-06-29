@@ -2,34 +2,28 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="bg-white shadow-sm">
-      <div className="container-custom flex justify-between items-center py-4">
+      <div className="container-custom flex justify-between items-center h-16 md:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="w-10 h-10 bg-eco-green-500 rounded-full flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-              />
-            </svg>
-          </span>
-          <span className="text-xl font-bold text-eco-green-800">
-            Wild & Woven
-          </span>
+        <Link href="/" className="flex items-center h-full overflow-hidden">
+          <div className="h-full flex items-center">
+            <Image
+              src="/images/logo1.png"
+              alt="IndoWoven Logo"
+              width={200}
+              height={200}
+              className="h-full w-auto object-contain"
+            />
+            <h1 className="ml-3 text-[1.4rem] md:text-[1.8rem] font-semibold md:font-bold text-gray-900 tracking-tight leading-none whitespace-nowrap select-none">
+              Indo<span className="text-green-700">Woven</span>
+            </h1>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

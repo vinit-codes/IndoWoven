@@ -7,25 +7,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <span className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-eco-green-800"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                  />
-                </svg>
-              </span>
-              <span className="text-xl font-bold">Wild & Woven</span>
-            </Link>
             <p className="text-eco-green-100 mb-6">
               Sustainable custom bags for businesses that care about the planet
               and their brand image.
@@ -64,7 +45,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/vineeth-kundu-99b5222b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                href="http://www.linkedin.com/in/indowoven-co-6403b8372"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-eco-green-200"
@@ -188,7 +169,7 @@ export default function Footer() {
                   href="mailto:wildnwoven101@gmail.com"
                   className="text-eco-brown-200 hover:text-white transition-colors"
                 >
-                  wildnwoven101@gmail.com
+                  exports@indowoven.com
                 </a>
               </li>
               <li className="flex items-start">
@@ -218,12 +199,6 @@ export default function Footer() {
                     className="text-eco-brown-200 hover:text-white transition-colors block"
                   >
                     +91 8102294842
-                  </a>
-                  <a
-                    href="tel:+917494080508"
-                    className="text-eco-brown-200 hover:text-white transition-colors block"
-                  >
-                    +91 7494080508
                   </a>
                 </div>
               </li>

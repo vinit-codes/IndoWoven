@@ -6,35 +6,101 @@ import ProductCard from "../../components/productCard";
 // Sample product data
 const PRODUCTS = [
   {
+    id: "eco-giftkit-1",
+    title: "Corporate Gift kit",
+    description: "Eco friendly gift kit with sustainable items.",
+    price: 19.99,
+    image: "/images/gift kit1.png",
+    category: "Gift Kit",
+    tags: ["Gift", "Kit", "Eco-friendly"],
+  },
+  {
+    id: "eco-giftkit-2",
+    title: "Light colour gift kit",
+    description: "Eco friendly gift kit with premium sustainable products.",
+    price: 21.99,
+    image: "/images/giftkit2.png",
+    category: "Gift Kit",
+    tags: ["Gift", "Kit", "Premium"],
+  },
+  {
+    id: "eco-giftkit-3",
+    title: "Gift Kit ",
+    description: "kit with a variety of eco-friendly items.",
+    price: 22.99,
+    image: "/images/gitft kit3.png",
+    category: "Gift Kit",
+    tags: ["Gift", "Kit", "Variety"],
+  },
+  {
+    id: "eco-jutefile-1",
+    title: "Light Colour Jute File ",
+    description: "Sustainable jute file for documents and papers.",
+    price: 8.99,
+    image: "/images/jutefile1.png",
+    category: "Stationery",
+    tags: ["Jute", "File", "Eco-friendly"],
+  },
+  {
+    id: "eco-jutefile-2",
+    title: "Dark Colour Jute File ",
+    description:
+      "Eco-friendly jute file for office and school use to keep your files safely.",
+    price: 8.99,
+    image: "/images/jutefile2.png",
+    category: "Stationery",
+    tags: ["Jute", "File", "Office"],
+  },
+  {
+    id: "eco-jutefile-3",
+    title: " Jute File 3",
+    description: "Premium jute file for sustainable organization.",
+    price: 9.99,
+    image: "/images/jutefile3.png",
+    category: "Stationery",
+    tags: ["Jute", "File", "Premium"],
+  },
+  {
+    id: "eco-schoolbag-1",
+    title: " Grey canvas bag",
+    description:
+      "eco-friendly school bag made from durable canvas for everyday use",
+    price: 24.99,
+    image: "/images/school bag.png",
+    category: "School",
+    tags: ["School", "Bag", "Eco-friendly"],
+  },
+
+  {
+    id: "eco-schoolbag-3",
+    title: "Dark canvas bag",
+    description: "Premium dark colour eco friendly bag. Made of canvas",
+    price: 27.99,
+    image: "/images/schoolbag3.png",
+    category: "School",
+    tags: ["School", "Bag", "Premium"],
+  },
+  {
+    id: "eco-schoolbag-4",
+    title: "light canvas bag ",
+    description:
+      "Stylish and eco-friendly light colour school bag for students. Made of canvas",
+    price: 26.99,
+    image: "/images/schoolbag4.png",
+    category: "School",
+    tags: ["School", "Bag", "Stylish"],
+  },
+  {
     id: "eco-gift-premium-1",
     title: "Premium Gift Bag",
     description:
-      "Elegant gift bag with satin ribbon and gradient design. Perfect for special occasions and luxury presentations.",
+      "Elegant gift bag with satin ribbon and gradient design. Perfect for special occasions and luxury presentations.Made of canvas",
     price: 14.99,
     image: "/images/gift bag1.jpeg",
     category: "Gift",
     tags: ["Premium", "Elegant", "Occasion"],
   },
-  {
-    id: "eco-clothing-premium-1",
-    title: "Designer Clothing Bag",
-    description:
-      "High-quality clothing bag with sturdy handles. Ideal for boutiques and fashion retailers.",
-    price: 12.99,
-    image: "/images/clothing bags.jpeg",
-    category: "Clothing",
-    tags: ["Fashion", "Retail", "Durable"],
-  },
-  {
-    id: "eco-gift-premium-2",
-    title: "Luxury Gift Pouch",
-    description:
-      "Beautiful gift pouch with bow design. Perfect for small gifts and jewelry items.",
-    price: 9.99,
-    image: "/images/gift bag2.jpeg",
-    category: "Gift",
-    tags: ["Luxury", "Small", "Bow"],
-  },
+
   {
     id: "eco-gift-collection-1",
     title: "Gift Bag Collection",
@@ -45,26 +111,7 @@ const PRODUCTS = [
     category: "Gift",
     tags: ["Collection", "Elegant", "Gold"],
   },
-  {
-    id: "eco-jewellery-premium-1",
-    title: "Luxury Gold Jewellery Bag",
-    description:
-      "Gold-colored luxury bag specifically designed for jewelry shops and boutiques. Features elegant design and sturdy handles.",
-    price: 19.99,
-    image: "/images/jewellery bag3.jpeg",
-    category: "Jewellery",
-    tags: ["Gold", "Luxury", "Branded"],
-  },
-  {
-    id: "eco-jewellery-premium-2",
-    title: "Royal Blue Jewellery Bag",
-    description:
-      "Royal blue jewellery bag with gold embossing and crown design. Perfect for upscale jewelry retailers.",
-    price: 19.99,
-    image: "/images/jewelllery bag2.jpeg",
-    category: "Jewellery",
-    tags: ["Blue", "Royal", "Branded"],
-  },
+
   {
     id: "eco-jewellery-premium-3",
     title: "Emerald Jewellery Shopping Bag",
@@ -104,86 +151,6 @@ const PRODUCTS = [
     image: "/images/bag9(opticals).jpeg",
     category: "Accessories",
     tags: ["Sunglasses", "Microfiber", "Protection"],
-  },
-  {
-    id: "eco-shop-1",
-    title: "Reusable Shopping Bag",
-    description:
-      "Sturdy shopping bag made from recycled polyester. Folds into a compact pouch for easy storage.",
-    price: 14.99,
-    image: "/images/bag10.jpeg",
-    category: "Shopping",
-    tags: ["Recycled", "Polyester", "Foldable"],
-  },
-  {
-    id: "eco-clothing-1",
-    title: "Garment Bag",
-    description:
-      "Stylish and durable garment bag made from sustainable materials. Protects your clothing while traveling.",
-    price: 59.99,
-    image: "/images/clothingbag.jpeg",
-    category: "Clothing",
-    tags: ["Sustainable", "Durable", "Travel"],
-  },
-  {
-    id: "eco-jewellery-2",
-    title: "Velvet Jewellery Case",
-    description:
-      "Luxurious velvet jewellery case with multiple compartments. Made with eco-friendly materials.",
-    price: 22.99,
-    image: "/images/bag2(jewellery2).png",
-    category: "Jewellery",
-    tags: ["Velvet", "Luxury", "Compartments"],
-  },
-  {
-    id: "eco-shop-2",
-    title: "Mesh Produce Bags",
-    description:
-      "Set of 5 lightweight mesh produce bags. Perfect for fruits, vegetables, and bulk foods.",
-    price: 12.99,
-    image: "/images/bag11.jpeg",
-    category: "Shopping",
-    tags: ["Mesh", "Set", "Lightweight"],
-  },
-  {
-    id: "eco-clothing-2",
-    title: "Suit Cover Bag",
-    description:
-      "Elegant suit cover bag made from sustainable materials. Keeps your suits clean and protected.",
-    price: 69.99,
-    image: "/images/bag12.jpeg",
-    category: "Clothing",
-    tags: ["Suit", "Cover", "Sustainable"],
-  },
-  {
-    id: "eco-optical-1",
-    title: "Optical Case",
-    description:
-      "Protective case for eyeglasses made from eco-friendly materials. Keeps your glasses safe and clean.",
-    price: 15.99,
-    image: "/images/bag3(optics).jpeg",
-    category: "Accessories",
-    tags: ["Optical", "Protection", "Eco-friendly"],
-  },
-  {
-    id: "eco-cosmetics-1",
-    title: "Cosmetics Travel Bag",
-    description:
-      "Compact cosmetics bag made from waterproof sustainable materials. Perfect for travel or daily use.",
-    price: 18.99,
-    image: "/images/bag5(cosmetics).jpeg",
-    category: "Accessories",
-    tags: ["Cosmetics", "Travel", "Waterproof"],
-  },
-  {
-    id: "eco-shopping-3",
-    title: "Compact Shopping Tote",
-    description:
-      "Lightweight yet durable shopping tote that folds into a tiny pouch. Perfect for carrying groceries.",
-    price: 12.99,
-    image: "/images/bag8.jpeg",
-    category: "Shopping",
-    tags: ["Compact", "Lightweight", "Tote"],
   },
 ];
 

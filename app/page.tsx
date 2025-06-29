@@ -9,7 +9,7 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/wild and woven.png"
+            src="/images/newback.png"
             alt="Wild and Woven eco-friendly bags"
             fill
             className="object-cover"
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="container-custom relative z-10 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 text-white">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-              Luxury Eco-Friendly Bags for Premium Brands
+              Luxury Eco-Friendly Products for Premium Brands
             </h1>
             <p className="text-base sm:text-lg">
               Elevate your brand with our elegant, sustainable bags that combine
@@ -74,11 +74,12 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-eco-green-800">
-                100% Sustainable Materials
+                Sustainable Materials
               </h3>
               <p className="text-eco-green-700 text-sm md:text-base">
-                Our bags are made from organic cotton, recycled polyester, and
-                other eco-friendly materials that reduce environmental impact.
+                Our products are eco-friendly materials like jute and canvaas
+                that reduce environmental impact and also elevate the status of
+                your brand.
               </p>
             </div>
 

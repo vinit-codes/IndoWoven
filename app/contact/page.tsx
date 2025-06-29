@@ -56,7 +56,7 @@ export default function ContactPage() {
                     Address
                   </h4>
                   <p className="text-sm text-gray-600">
-                    123 Eco Street, Green City, India
+                    kolkata, India
                   </p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                   </h4>
                   <p className="text-sm text-gray-600">+91 7682887844</p>
                   <p className="text-sm text-gray-600">+91 8102294842</p>
-                  <p className="text-sm text-gray-600">+91 7494080508</p>
+        
                 </div>
               </div>
             </div>

@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/admin", "/private"],
+      disallow: [], // ✅ Adjust if you have real admin/private routes
     },
-    sitemap: "https://yourdomain.com/sitemap.xml",
+    sitemap: "https://www.indowoven.com/sitemap.xml",
   };
 }

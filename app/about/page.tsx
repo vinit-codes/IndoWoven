@@ -10,36 +10,72 @@ export default function AboutPage() {
           About Wild & Woven
         </h1>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div>
-            <p className="text-sm md:text-base lg:text-lg text-eco-green-700 mb-4 md:mb-6">
-              🌿 Our Story: The Birth of Wild & Woven In a world overwhelmed by
-              plastic and waste, three visionaries — SM Idlar, Md Arquam Sayeed,
-              and Vineeth Kundu — set out to craft a new path. A path where
-              style meets sustainability, and responsibility becomes a way of
-              life.
+          <div className="text-sm md:text-base lg:text-lg text-eco-green-700">
+            <p className="mb-4 md:mb-6">
+              🌿{" "}
+              <strong>
+                IndoWoven: Sustainable Gifting that Speaks for Your Brand
+              </strong>
+              <br />
+              In today&#39;s conscious marketplace, every brand, institution, and
+              event organizer is under pressure to do more than just deliver —
+              they must inspire, align with values, and lead by example. At{" "}
+              <strong>IndoWoven</strong>, we help you elevate your brand
+              presence with premium, eco-conscious gifting solutions that
+              reflect your commitment to sustainability and thoughtful impact.
             </p>
-            <p className="text-sm md:text-base lg:text-lg text-eco-green-700 mb-4 md:mb-6">
-              Wild & Woven was born from a simple yet powerful belief:
-              &quot;Luxury should never come at the cost of nature.&quot; We saw
-              the damage caused by mindless consumption — and we knew it was
-              time for a change. Our answer was simple, yet profound: return to
-              nature. Through the timeless strength of jute and the clean
-              elegance of eco-friendly paper, we began creating products that
-              carry not just your essentials — but also your values. Bags that
-              are not only beautiful, but also biodegradable, breathable, and
-              born to inspire conscious living.
+
+            <p className="mb-4 md:mb-6">
+              Whether you&#39;re hosting a high-stakes corporate meeting, onboarding
+              new employees, organizing a university event, or creating a
+              high-end client gifting experience — our biodegradable jute bags,
+              bamboo-wrapped bottles, and eco-friendly stationery kits don’t
+              just look premium —{" "}
+              <strong>
+                they speak volumes about who you are as a company.
+              </strong>
+              <br />
+              We understand that your reputation is built on consistency,
+              quality, and detail. That’s why our products are not only
+              sustainably sourced and ethically made — they are{" "}
+              <em>
+                designed to impress, built to last, and delivered on time.
+              </em>
             </p>
-            <p className="text-sm md:text-base lg:text-lg text-eco-green-700">
-              At Wild & Woven, every thread, every fold, and every design tells
-              a story of respect — for the Earth, for craftsmanship, and for a
-              future woven with care. Whether you choose our rugged jute
-              creations or our refined eco-paper bags, you&apos;re making a
-              statement: A statement of style, soul, and sustainability. We are
-              not merely offering bags. We are offering a choice — A choice to
-              live lightly, beautifully, and meaningfully. Wild & Woven —
-              Nature&apos;s Artistry, Carried with Pride.
+
+            <p className="mb-2">
+              💼 <strong>Your Brand. Our Craft. One Shared Mission.</strong>
+              <br />
+              Partnering with IndoWoven allows you to:
+            </p>
+
+            <ul className="list-disc ml-6 mb-4">
+              <li>
+                ✔ Enhance your ESG credibility with clients, employees, and
+                stakeholders
+              </li>
+              <li>
+                ✔ Make your events, awards, and gifting memorable and meaningful
+              </li>
+              <li>
+                ✔ Replace generic, forgettable plastic giveaways with branded
+                sustainability
+              </li>
+              <li>
+                ✔ Reduce procurement hassle with reliable design, supply &
+                delivery support
+              </li>
+            </ul>
+
+            <p>
+              <strong>
+                This is more than a product. It’s an extension of your values.
+              </strong>
+              <br />
+              <em>IndoWoven — Carry your impact.</em>
             </p>
           </div>
+
           <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-md mt-6 md:mt-0">
             <Image
               src="/images/back3.png"
@@ -258,8 +294,7 @@ export default function AboutPage() {
           Ready to Go Green with Your Business?
         </h2>
         <p className="text-sm md:text-base mb-6 max-w-2xl mx-auto">
-          Join hundreds of businesses making a positive environmental impact
-          while elevating their brand with our eco-friendly custom bags.
+          Make an Impact. Make It Branded. Make It Sustainable.
         </p>
         <Link
           href="/contact"
