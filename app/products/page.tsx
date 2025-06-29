@@ -184,9 +184,9 @@ export default function ProductsPage() {
         Our Products
       </h1>
       <p className="text-sm md:text-base text-eco-green-700 mb-6 md:mb-8 max-w-3xl">
-        Browse our collection of eco-friendly, sustainable bags made with
-        ethically sourced materials. Perfect for businesses looking to reduce
-        their environmental impact.
+        Browse our collection of eco-friendly products made with ethically
+        sourced materials. Perfect for businesses looking to reduce their
+        environmental impact.
       </p>
 
       {/* Filters */}
