@@ -3,7 +3,7 @@
 import { useState } from "react";
 import ProductCard from "../../components/productCard";
 
-// Sample product data
+// Updated product data
 const PRODUCTS = [
   {
     id: "eco-giftkit-1",
@@ -34,26 +34,26 @@ const PRODUCTS = [
   },
   {
     id: "eco-jutefile-1",
-    title: "Light Colour Jute File ",
-    description: "Sustainable jute file for documents and papers.",
+    title: "Premium Jute File",
+    description: "made by talented artisans",
     price: 8.99,
-    image: "/images/jutefile1.png",
+    image: "/images/files1.jpg",
     category: "Stationery",
     tags: ["Jute", "File", "Eco-friendly"],
   },
   {
     id: "eco-jutefile-2",
-    title: "Dark Colour Jute File ",
+    title: "Hand crafted jute File",
     description:
       "Eco-friendly jute file for office and school use to keep your files safely.",
     price: 8.99,
-    image: "/images/jutefile2.png",
+    image: "/images/bag19.jpg",
     category: "Stationery",
     tags: ["Jute", "File", "Office"],
   },
   {
     id: "eco-jutefile-3",
-    title: " Jute File 3",
+    title: "Jute File 3",
     description: "Premium jute file for sustainable organization.",
     price: 9.99,
     image: "/images/jutefile3.png",
@@ -62,7 +62,7 @@ const PRODUCTS = [
   },
   {
     id: "eco-schoolbag-1",
-    title: " Grey canvas bag",
+    title: "Grey canvas bag",
     description:
       "eco-friendly school bag made from durable canvas for everyday use",
     price: 24.99,
@@ -70,7 +70,6 @@ const PRODUCTS = [
     category: "School",
     tags: ["School", "Bag", "Eco-friendly"],
   },
-
   {
     id: "eco-schoolbag-3",
     title: "Dark canvas bag",
@@ -82,7 +81,7 @@ const PRODUCTS = [
   },
   {
     id: "eco-schoolbag-4",
-    title: "light canvas bag ",
+    title: "Light canvas bag",
     description:
       "Stylish and eco-friendly light colour school bag for students. Made of canvas",
     price: 26.99,
@@ -92,34 +91,31 @@ const PRODUCTS = [
   },
   {
     id: "eco-gift-premium-1",
-    title: "Premium Gift Bag",
-    description:
-      "Elegant gift bag with satin ribbon and gradient design. Perfect for special occasions and luxury presentations.Made of canvas",
+    title: "Midnight Navy Canvas Bag",
+    description: "Perfect for colleges that don’t settle for average.",
     price: 14.99,
-    image: "/images/gift bag1.jpeg",
+    image: "/images/bag18.jpg",
     category: "Gift",
     tags: ["Premium", "Elegant", "Occasion"],
   },
-
   {
     id: "eco-gift-collection-1",
-    title: "Gift Bag Collection",
+    title: "Dark green bag of Canvas",
     description:
-      "Elegant white gift bags with gold accents. Comes in different sizes for various gifting needs.",
+      "For students who think ahead—carry purpose, not just textbooks",
     price: 24.99,
-    image: "/images/gifts bags.jpeg",
+    image: "/images/bag17.jpg",
     category: "Gift",
     tags: ["Collection", "Elegant", "Gold"],
   },
-
   {
     id: "eco-jewellery-premium-3",
-    title: "Emerald Jewellery Shopping Bag",
+    title: "Premium Dark Blue Canvas bag",
     description:
-      "Deep green jewellery shopping bag with gold accents. Elegant and eco-friendly option for luxury jewelry stores.",
+      "Crafted from premium canvas to match the hustle of those who refuse to blend in",
     price: 18.99,
-    image: "/images/jwewllerybag1.jpeg",
-    category: "Jewellery",
+    image: "/images/bag16.jpg",
+    category: "Gift",
     tags: ["Green", "Gold", "Luxury"],
   },
   {
@@ -158,14 +154,9 @@ export default function ProductsPage() {
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Filter products based on category and search query
   const filteredProducts = PRODUCTS.filter((product) => {
-    // Category filter
-    if (categoryFilter && product.category !== categoryFilter) {
-      return false;
-    }
+    if (categoryFilter && product.category !== categoryFilter) return false;
 
-    // Search query filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       return (
@@ -179,145 +170,110 @@ export default function ProductsPage() {
   });
 
   return (
-    <div className="container-custom py-8 md:py-12 px-4 md:px-6">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-eco-green-800 mb-2">
-        Our Products
-      </h1>
-      <p className="text-sm md:text-base text-eco-green-700 mb-6 md:mb-8 max-w-3xl">
-        Browse our collection of eco-friendly products made with ethically
-        sourced materials. Perfect for businesses looking to reduce their
-        environmental impact.
-      </p>
-
-      {/* Filters */}
-      <div className="flex flex-col md:flex-row gap-4 mb-6 md:mb-8 items-start md:items-center justify-between">
-        <div className="flex gap-2 flex-wrap">
-          <button
-            onClick={() => setCategoryFilter(null)}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base transition-colors ${
-              categoryFilter === null
-                ? "bg-eco-green-500 text-white"
-                : "bg-eco-green-100 text-eco-green-800 hover:bg-eco-green-200"
-            }`}
-          >
-            All
-          </button>
-          <button
-            onClick={() => setCategoryFilter("Jewellery")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base transition-colors ${
-              categoryFilter === "Jewellery"
-                ? "bg-eco-green-500 text-white"
-                : "bg-eco-green-100 text-eco-green-800 hover:bg-eco-green-200"
-            }`}
-            id="jewellery"
-          >
-            Jewellery Bags
-          </button>
-          <button
-            onClick={() => setCategoryFilter("Clothing")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base transition-colors ${
-              categoryFilter === "Clothing"
-                ? "bg-eco-green-500 text-white"
-                : "bg-eco-green-100 text-eco-green-800 hover:bg-eco-green-200"
-            }`}
-            id="clothing"
-          >
-            Clothing Bags
-          </button>
-          <button
-            onClick={() => setCategoryFilter("Shopping")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base transition-colors ${
-              categoryFilter === "Shopping"
-                ? "bg-eco-green-500 text-white"
-                : "bg-eco-green-100 text-eco-green-800 hover:bg-eco-green-200"
-            }`}
-            id="shopping"
-          >
-            Shopping Bags
-          </button>
-          <button
-            onClick={() => setCategoryFilter("Gift")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base transition-colors ${
-              categoryFilter === "Gift"
-                ? "bg-eco-green-500 text-white"
-                : "bg-eco-green-100 text-eco-green-800 hover:bg-eco-green-200"
-            }`}
-            id="gift"
-          >
-            Gift Bags
-          </button>
-          <button
-            onClick={() => setCategoryFilter("Accessories")}
-            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base transition-colors ${
-              categoryFilter === "Accessories"
-                ? "bg-eco-green-500 text-white"
-                : "bg-eco-green-100 text-eco-green-800 hover:bg-eco-green-200"
-            }`}
-            id="accessories"
-          >
-            Accessories
-          </button>
-        </div>
-
-        <div className="w-full md:w-auto mt-4 md:mt-0">
-          <input
-            type="text"
-            placeholder="Search products..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-3 py-2 text-sm md:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-eco-green-500 focus:border-eco-green-500"
-          />
-        </div>
-      </div>
-
-      {/* Products Grid */}
-      {filteredProducts.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          {filteredProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              title={product.title}
-              description={product.description}
-              image={product.image}
-              category={product.category}
-              tags={product.tags}
-            />
-          ))}
-        </div>
-      ) : (
-        <div className="text-center py-8 md:py-12">
-          <p className="text-base md:text-lg text-gray-600">
-            No products match your filters. Try a different search or category.
+    <section className="px-4 md:px-6 py-10 md:py-16 bg-eco-green-50">
+      <div className="max-w-7xl mx-auto">
+        {/* Headline */}
+        <header className="text-center mb-12">
+          <h1 className="text-3xl md:text-5xl font-bold text-eco-green-800">
+            Discover Our Eco Collection
+          </h1>
+          <p className="mt-3 text-md md:text-lg text-eco-green-700 max-w-2xl mx-auto">
+            Browse our collection of eco-friendly products crafted from
+            ethically sourced materials—perfect for businesses looking to
+            elevate their brand image while making a positive environmental
+            impact.
           </p>
-          <button
-            onClick={() => {
-              setCategoryFilter(null);
-              setSearchQuery("");
-            }}
-            className="mt-4 btn-primary text-sm md:text-base px-4 py-2"
-          >
-            Clear Filters
-          </button>
-        </div>
-      )}
+        </header>
 
-      {/* Call to Action */}
-      <div className="mt-12 md:mt-16 bg-eco-brown-100 rounded-xl p-6 md:p-8 text-center">
-        <h2 className="text-xl md:text-2xl font-bold text-eco-brown-800 mb-3 md:mb-4">
-          Need a Custom Solution?
-        </h2>
-        <p className="text-sm md:text-base text-eco-brown-700 mb-4 md:mb-6 max-w-2xl mx-auto">
-          We specialize in creating custom bag designs tailored to your brand
-          and specific requirements. From material selection to print design,
-          we&apos;ll work with you every step of the way.
-        </p>
-        <a
-          href="/contact"
-          className="btn-primary bg-eco-brown-600 hover:bg-eco-brown-700 inline-block text-sm md:text-base px-4 py-2 md:px-6 md:py-3"
-        >
-          Request Custom Design
-        </a>
+        {/* Filters + Search */}
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-10">
+          {/* Category Filters */}
+          <div className="flex flex-wrap gap-2">
+            {[
+              { label: "All", value: null },
+              { label: "Gift Kits", value: "Gift Kit" },
+              { label: "Jute Files", value: "Stationery" },
+              { label: "College & School Bags", value: "School" },
+              { label: "Premium Canvas Bags", value: "Gift" },
+              { label: "Jewellery Bags", value: "Jewellery" },
+              { label: "Accessories", value: "Accessories" },
+            ].map(({ label, value }) => (
+              <button
+                key={label}
+                onClick={() => setCategoryFilter(value)}
+                className={`px-4 py-2 text-sm font-medium rounded-lg border transition-colors ${
+                  categoryFilter === value
+                    ? "bg-eco-green-600 text-white border-eco-green-600"
+                    : "bg-white text-eco-green-800 border-eco-green-200 hover:bg-eco-green-100"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* Search */}
+          <div className="w-full lg:w-auto">
+            <input
+              type="text"
+              placeholder="Search by name, tags, or type..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full lg:w-80 px-4 py-2 rounded-lg border border-eco-green-300 text-sm focus:outline-none focus:ring-2 focus:ring-eco-green-500"
+            />
+          </div>
+        </div>
+
+        {/* Products */}
+        {filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                title={product.title}
+                description={product.description}
+                image={product.image}
+                category={product.category}
+                tags={product.tags}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">
+              No products match your filters. Try a different search or
+              category.
+            </p>
+            <button
+              onClick={() => {
+                setCategoryFilter(null);
+                setSearchQuery("");
+              }}
+              className="mt-6 px-5 py-2 text-sm font-medium bg-eco-green-600 text-white rounded-md hover:bg-eco-green-700"
+            >
+              Reset Filters
+            </button>
+          </div>
+        )}
+
+        {/* CTA */}
+        <div className="mt-16 bg-eco-brown-100 rounded-2xl p-8 md:p-12 text-center shadow-inner">
+          <h2 className="text-2xl md:text-3xl font-bold text-eco-brown-800 mb-4">
+            Need a Custom Solution?
+          </h2>
+          <p className="text-md md:text-lg text-eco-brown-700 mb-6 max-w-2xl mx-auto">
+            We specialize in crafting custom bag designs tailored to your
+            brand’s vibe. From materials to branding—we’ll handle everything
+            end-to-end.
+          </p>
+          <a
+            href="/contact"
+            className="inline-block px-6 py-3 bg-eco-brown-700 text-white font-semibold rounded-lg hover:bg-eco-brown-800 transition"
+          >
+            Request a Custom Design
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
