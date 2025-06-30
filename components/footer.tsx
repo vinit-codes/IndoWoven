@@ -166,7 +166,7 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="mailto:wildnwoven101@gmail.com"
+                  href="mailto:exports@indoven.com"
                   className="text-eco-brown-200 hover:text-white transition-colors"
                 >
                   exports@indowoven.com
