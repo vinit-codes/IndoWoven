@@ -45,7 +45,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="http://www.linkedin.com/in/indowoven-co-6403b8372"
+                href="https://www.linkedin.com/company/indowoven/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-eco-green-200"
@@ -166,7 +166,7 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="mailto:exports@indoven.com"
+                  href="mailto:exports@indowoven.com"
                   className="text-eco-brown-200 hover:text-white transition-colors"
                 >
                   exports@indowoven.com
