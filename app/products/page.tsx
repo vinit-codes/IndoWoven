@@ -120,7 +120,7 @@ const PRODUCTS = [
   },
   {
     id: "eco-jewellery-premium-4",
-    title: "Luxury Jute Jewelry Tote",
+    title: "Luxury Jute Jewellery Tote",
     description:
       "Handcrafted jute jewelry tote with premium finishes. Sustainable luxury for high-end jewelry retailers.",
     price: 22.99,

@@ -1,130 +1,70 @@
 "use client";
-
 import Link from "next/link";
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-sm">
-      <div className="container-custom flex justify-between items-center h-16 md:h-20">
+    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center h-full overflow-hidden">
-          <div className="h-full flex items-center">
+          <div className="h-10 md:h-14 flex items-center">
             <Image
               src="/images/logo1.png"
               alt="IndoWoven Logo"
-              width={200}
-              height={200}
-              className="h-full w-auto object-contain"
+              width={140}
+              height={50}
+              className="object-contain h-full w-auto"
             />
-            <h1 className="ml-3 text-[1.4rem] md:text-[1.8rem] font-semibold md:font-bold text-gray-900 tracking-tight leading-none whitespace-nowrap select-none">
+            <h1 className="ml-2 text-xl md:text-2xl font-semibold text-gray-900 whitespace-nowrap">
               Indo<span className="text-green-700">Woven</span>
             </h1>
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
-          <Link
-            href="/"
-            className="text-eco-green-800 hover:text-eco-green-600 font-medium"
-          >
-            Home
-          </Link>
-          <Link
-            href="/products"
-            className="text-eco-green-800 hover:text-eco-green-600 font-medium"
-          >
-            Products
-          </Link>
-          <Link
-            href="/about"
-            className="text-eco-green-800 hover:text-eco-green-600 font-medium"
-          >
-            About Us
-          </Link>
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex space-x-6 items-center">
+          <Link href="/">Home</Link>
+          <Link href="/products">Products</Link>
+          <Link href="/about">About</Link>
           <Link href="/contact" className="btn-primary">
-            Contact Us
+            Contact
           </Link>
-        </div>
+        </nav>
 
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden focus:outline-none"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-eco-green-800"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-eco-green-800"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden">
+          <button onClick={() => setOpen(!open)} className="text-green-800">
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white">
-          <div className="container-custom py-4 space-y-4 flex flex-col">
-            <Link
-              href="/"
-              className="text-eco-green-800 hover:text-eco-green-600 font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/products"
-              className="text-eco-green-800 hover:text-eco-green-600 font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Products
-            </Link>
-            <Link
-              href="/about"
-              className="text-eco-green-800 hover:text-eco-green-600 font-medium py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About Us
-            </Link>
-            <Link
-              href="/contact"
-              className="btn-primary text-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      )}
-    </nav>
+      {/* Mobile Dropdown Menu */}
+      <div
+        className={`md:hidden bg-white px-4 pt-2 pb-4 shadow-md absolute top-full left-0 w-full transition-all duration-300 ${
+          open ? "block" : "hidden"
+        }`}
+      >
+        <nav className="flex flex-col space-y-3">
+          <Link href="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
+          <Link href="/products" onClick={() => setOpen(false)}>
+            Products
+          </Link>
+          <Link href="/about" onClick={() => setOpen(false)}>
+            About
+          </Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>
+            Contact
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
 }

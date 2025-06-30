@@ -110,7 +110,8 @@ export default function RootLayout({
 
       <body className="flex flex-col min-h-screen antialiased text-gray-900">
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow pt-20 md:pt-24">{children}</main>
+
         <Footer />
       </body>
     </html>
