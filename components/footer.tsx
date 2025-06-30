@@ -108,7 +108,7 @@ export default function Footer() {
                   href="/products#jewellery"
                   className="text-eco-green-100 hover:text-white"
                 >
-                  Jewellery Bags
+                  Gifting Bags
                 </Link>
               </li>
               <li>
@@ -116,7 +116,7 @@ export default function Footer() {
                   href="/products#clothing"
                   className="text-eco-green-100 hover:text-white"
                 >
-                  Clothing Bags
+                  Gifting kit
                 </Link>
               </li>
               <li>
@@ -124,7 +124,7 @@ export default function Footer() {
                   href="/products#shopping"
                   className="text-eco-green-100 hover:text-white"
                 >
-                  Shopping Bags
+                  College and School bags
                 </Link>
               </li>
               <li>
