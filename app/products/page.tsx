@@ -130,9 +130,9 @@ const PRODUCTS = [
   },
   {
     id: "eco-accessories-2",
-    title: "Jewelry Travel Pouch",
+    title: "Travel Pouch",
     description:
-      "Compact jewelry travel pouch with multiple compartments to keep your valuables organized and protected.",
+      "Compact travel pouch with multiple compartments to keep your valuables organized and protected.",
     price: 29.99,
     image: "/images/bag15(shoes).jpeg",
     category: "Accessories",
