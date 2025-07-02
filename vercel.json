@@ -8,6 +8,17 @@
   ],
   "routes": [
     {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "http://indowoven.com"
+        }
+      ],
+      "statusCode": 301,
+      "destination": "https://indowoven.com/$1"
+    },
+    {
       "src": "/robots.txt",
       "dest": "/robots.txt"
     },
