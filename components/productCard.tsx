@@ -42,9 +42,14 @@ export default function ProductCard({
         </div>
 
         <div className="flex justify-between items-center">
-          <span className="text-lg italic font-medium text-eco-green-800">
-            Exclusive Rates on Call
-          </span>
+          <a
+            href="https://wa.me/918102294842"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-eco-green-500 hover:bg-eco-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300"
+          >
+            Message on WhatsApp
+          </a>
         </div>
       </div>
     </div>
