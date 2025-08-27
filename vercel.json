@@ -15,8 +15,8 @@
           "value": "http://indowoven.com"
         }
       ],
-      "statusCode": 301,
-      "destination": "https://indowoven.com/$1"
+      "destination": "https://indowoven.com/$1",
+      "permanent": true
     },
     {
       "src": "/robots.txt",
