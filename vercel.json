@@ -6,45 +6,23 @@
       "use": "@vercel/next"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
-          "value": "http://indowoven.com"
+          "value": "indowoven.com"
         }
       ],
-      "destination": "https://indowoven.com/$1",
+      "destination": "https://indowoven.com/$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1",
       "permanent": true
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml"
-    },
-    {
-      "src": "/manifest.json",
-      "dest": "/manifest.json"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/icons/(.*)",
-      "dest": "/icons/$1"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/images/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
     }
   ]
 }
