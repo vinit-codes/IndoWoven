@@ -48,7 +48,7 @@ export default function ProductCard({
             rel="noopener noreferrer"
             className="bg-eco-green-500 hover:bg-eco-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300"
           >
-            Message on WhatsApp
+            Message on WhatsApp !
           </a>
         </div>
       </div>
