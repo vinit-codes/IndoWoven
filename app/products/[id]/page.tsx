@@ -5,8 +5,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
+// Product type definition
+interface Product {
+  id: string;
+  title: string;
+  description: string;
+  price: number;
+  image: string;
+  category: string;
+  tags: string[];
+  variants: string[];
+}
+
 // Product data - in a real app, this would come from an API
-const PRODUCTS = [
+const PRODUCTS: Product[] = [
   {
     id: "1",
     title: "B File",
@@ -112,7 +124,7 @@ const PRODUCTS = [
 export default function ProductDetailPage() {
   const params = useParams();
   const [selectedImage, setSelectedImage] = useState("");
-  const [product, setProduct] = useState<any>(null);
+  const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     const foundProduct = PRODUCTS.find((p) => p.id === params.id);
@@ -168,7 +180,7 @@ export default function ProductDetailPage() {
 
             {/* Thumbnail Gallery */}
             <div className="grid grid-cols-4 sm:grid-cols-6 gap-2">
-              {product.variants.map((variant, index) => (
+              {product.variants.map((variant: string, index: number) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(variant)}
@@ -220,7 +232,7 @@ export default function ProductDetailPage() {
             <div className="space-y-3">
               <h3 className="text-lg font-semibold text-eco-green-800">Features</h3>
               <div className="flex flex-wrap gap-2">
-                {product.tags.map((tag) => (
+                {product.tags.map((tag: string) => (
                   <span
                     key={tag}
                     className="bg-eco-green-50 text-eco-green-700 px-3 py-1 rounded-md text-sm border border-eco-green-200"
