@@ -30,6 +30,7 @@ export default function Navbar() {
         <nav className="hidden md:flex space-x-6 items-center">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
+          <Link href="/mockups">Mockups</Link>
           <Link href="/about">About</Link>
           <Link href="/contact" className="btn-primary">
             Contact
