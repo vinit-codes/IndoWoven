@@ -58,6 +58,9 @@ export default function Navbar() {
           <Link href="/products" onClick={() => setOpen(false)}>
             Products
           </Link>
+          <Link href="/mockups" onClick={() => setOpen(false)}>
+            Mockups
+          </Link>
           <Link href="/about" onClick={() => setOpen(false)}>
             About
           </Link>
