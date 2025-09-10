@@ -20,13 +20,14 @@ interface Product {
 const PRODUCTS: Product[] = [
   {
     id: "1",
-    title: "Blue Bag",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Blue Jute file skin khaki shade",
+    description: "washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 13.5 x 9.5 x 0.5 inches.",
     image: "/images/B File.webp",
     category: "General",
     tags: ["Eco-friendly"],
     variants: ["/images/B File.webp", "/images/B File B.webp", "/images/B File C.webp"],
   },
+
   {
     id: "3",
     title: "Laptop Blue",
@@ -83,8 +84,8 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "9",
-    title: "Laptop ",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Jute file skin khaki shade ",
+    description: "washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 13.5 x 9.5 x 0.5 inches.",
     image: "/images/K File s.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -107,6 +108,24 @@ const PRODUCTS: Product[] = [
     category: "General",
     tags: ["Eco-friendly"],
     variants: ["/images/purplebag1.webp", "/images/purplebag2.webp"],
+  },
+  {
+    id: "12",
+    title: "Jute Pouch",
+    description: "Eco friendly jute pouches in multiple variants.",
+    image: "/images/jutepouch1.webp",
+    category: "General",
+    tags: ["Eco-friendly"],
+    variants: ["/images/jutepouch1.webp", "/images/jutepouch2.webp", "/images/jutepouch3.webp"],
+  },
+  {
+    id: "13",
+    title: "Passport case",
+    description: "washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 5.75 x 4 inches.",
+    image: "/images/purse1.webp",
+    category: "General",
+    tags: ["Eco-friendly"],
+    variants: ["/images/purse1.webp", "/images/purse2.webp", "/images/purse3.webp"],
   },
 ];
 

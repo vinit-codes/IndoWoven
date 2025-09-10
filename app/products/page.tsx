@@ -8,8 +8,8 @@ import ProductCard from "../../components/productCard";
 const PRODUCTS = [
   {
     id: "1",
-    title: "Blue bag",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Blue Jute file skin khaki shade",
+    description: "washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 13.5 x 9.5 x 0.5 inches.",
     price: 19.99,
     image: "/images/B File.webp",
     category: "General",
@@ -37,7 +37,7 @@ const PRODUCTS = [
   {
     id: "5",
     title: "bluelapbag",
-    description: "Eco friendly product with sustainable materials.",
+    description: "washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 13.5 x 9.5 x 0.5 inches.",
     price: 19.99,
     image: "/images/bluelapbag1.webp",
     category: "General",
@@ -72,8 +72,8 @@ const PRODUCTS = [
   },
   {
     id: "9",
-    title: "K File s",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Jute file skin khaki shade",
+    description: "washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 13.5 x 9.5 x 0.5 inches.",
     price: 19.99,
     image: "/images/K File s.webp",
     category: "General",
@@ -98,6 +98,25 @@ const PRODUCTS = [
     category: "General",
     tags: ["Eco-friendly"],
   },
+  {
+    id: "12",
+    title: "jute pouches",
+    description: "Eco friendly handmade jute pouches..",
+    image: "/images/jutepouch1.webp",
+    category: "General",
+    tags: ["Eco-friendly"],
+   
+  },
+  {
+    id: "13",
+    title: "Passport case",
+    description: "washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 5.75 x 4 inches.",
+    image: "/images/purse1.webp",
+    category: "General",
+    tags: ["Eco-friendly"],
+
+  },
+
 ];
 
 export default function ProductsPage() {
