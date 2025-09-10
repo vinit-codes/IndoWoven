@@ -144,7 +144,7 @@ export default function ProductsPage() {
         {/* Headline */}
         <header className="text-center mb-12">
           <h1 className="text-3xl md:text-5xl font-bold text-eco-green-800">
-            Discover Our Eco Collection
+            Minimum order quantity - 50 
           </h1>
           <p className="mt-3 text-md md:text-lg text-eco-green-700 max-w-2xl mx-auto">
             Browse our collection of eco-friendly products crafted from
