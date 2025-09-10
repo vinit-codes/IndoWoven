@@ -5,15 +5,7 @@ import MockupProductCard from "../../components/mockupProductCard";
 
 // Updated product data
 const PRODUCTS = [
-  {
-    id: "eco-giftkit-1",
-    title: "Corporate Gift kit",
-    description: "Eco friendly gift kit with sustainable items.",
-    price: 19.99,
-    image: "/images/gift kit1.png",
-    category: "Gift Kit",
-    tags: ["Gift", "Kit", "Eco-friendly"],
-  },
+
   {
     id: "eco-giftkit-2",
     title: "Light colour gift kit",
@@ -70,34 +62,8 @@ const PRODUCTS = [
     category: "School",
     tags: ["School", "Bag", "Eco-friendly"],
   },
-  {
-    id: "eco-schoolbag-3",
-    title: "Dark canvas bag",
-    description: "Premium dark colour eco friendly bag. Made of canvas",
-    price: 27.99,
-    image: "/images/schoolbag3.png",
-    category: "School",
-    tags: ["School", "Bag", "Premium"],
-  },
-  {
-    id: "eco-schoolbag-4",
-    title: "Light canvas bag",
-    description:
-      "Stylish and eco-friendly light colour school bag for students. Made of canvas",
-    price: 26.99,
-    image: "/images/schoolbag4.png",
-    category: "School",
-    tags: ["School", "Bag", "Stylish"],
-  },
-  {
-    id: "eco-gift-premium-1",
-    title: "Midnight Navy Canvas Bag",
-    description: "Perfect for colleges that don’t settle for average.",
-    price: 14.99,
-    image: "/images/bag18.jpg",
-    category: "Gift",
-    tags: ["Premium", "Elegant", "Occasion"],
-  },
+
+
   {
     id: "eco-gift-collection-1",
     title: "Dark green bag of Canvas",

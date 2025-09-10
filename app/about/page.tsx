@@ -2,6 +2,33 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPage() {
+  const TEAM = [
+    {
+      name: "Dr. Md. Ehtesham Hasan",
+      role: "Management, Marketing & Product Development",
+      desc: "Ph.D. in Mechanical Engineering from IIT (ISM) Dhanbad and M.Tech from NIT Durgapur. Currently Assistant Professor at KIIT with expertise in power hydraulics, dynamic modelling, and hydrostatic transmission systems. Published extensively in SCI journals and experienced in teaching Strength of Materials, Machine Design, and Advanced Mechanics of Solids.",
+      img: "/images/ethe.jpg",
+    },
+    {
+      name: "Shahid Nezam",
+      role: "Head of Finance, Business Analytics & Strategic Planning",
+      desc: "Detail-oriented accounts professional with 10+ years of experience across finance and billing roles in the GCC. Skilled in invoicing, reconciliation, payroll, purchase orders, VAT/tax compliance, and ERP systems (Tally, Ramco, Navision). Holds an M.Com in Marketing & Finance.",
+      img: "/images/Shahid Nezam.jpg",
+    },
+    {
+      name: "Vineeth Kundu",
+      role: "Marketting, Product Development & Export Operations",
+      desc: "Leads marketing strategies, branding, and digital presence while also developing and maintaining the company’s social platforms to ensure a strong market identity and seamless online experience. 2nd-year B.Tech Computer Science student at Silicon University, Bhubaneswar.",
+      img: "/images/Vineeth Kundu.webp",
+    },
+    {
+      name: "Md Arquam Sayeed",
+      role: "Management, Sales & Export Operations",
+      desc: "Oversees client engagement and supply chain coordination — liaising with manufacturers, managing sales, and strengthening client relationships. 2nd-year B.Tech in Electronics & Instrumentation Engineering at Silicon University.",
+      img: "/images/team/partner4.jpg",
+    },
+  ];
+  
   return (
     <div className="container-custom py-10 px-4 md:px-8 text-eco-green-800">
       {/* Hero Section */}
@@ -36,6 +63,35 @@ export default function AboutPage() {
           We’re the artisans of your brand’s first impression. Our products
           aren’t just eco-friendly — they’re conversation starters.
         </p>
+      </section>
+
+      {/* Team Section */}
+      <section className="mb-20">
+        <h2 className="text-center text-2xl md:text-3xl font-bold mb-10">
+          Meet the People Behind IndoWoven
+        </h2>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {TEAM.map(({ name, role, desc, img }, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center p-6"
+            >
+              <div className="w-28 h-28 mx-auto relative mb-4">
+                <Image
+                  src={img}
+                  alt={name}
+                  fill
+                  className="object-cover rounded-full border-4 border-eco-green-200"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-eco-green-800">{name}</h3>
+              <p className="text-sm text-eco-green-600 font-medium mb-2">
+                {role}
+              </p>
+              <p className="text-sm text-eco-green-700">{desc}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Differentiators Section */}

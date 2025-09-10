@@ -10,8 +10,7 @@ interface Product {
   id: string;
   title: string;
   description: string;
-  price: number;
-  image: string;
+    image: string;
   category: string;
   tags: string[];
   variants: string[];
@@ -21,9 +20,8 @@ interface Product {
 const PRODUCTS: Product[] = [
   {
     id: "1",
-    title: "B File",
+    title: "Blue Bag",
     description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
     image: "/images/B File.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -31,19 +29,17 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "3",
-    title: "Bluebag",
-    description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
-    image: "/images/Bluebag1.webp",
+    title: "Laptop Blue",
+    description: "Laptop blue bag made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
+    image: "/images/Bluebag3.webp",
     category: "General",
     tags: ["Eco-friendly"],
-    variants: ["/images/Bluebag1.webp", "/images/Bluebag2.webp", "/images/Bluebag3.webp"],
+    variants: ["/images/Bluebag3.webp", "/images/Bluebag2.webp", "/images/Bluebag1.webp"],
   },
   {
     id: "4",
-    title: "Bluebox",
-    description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
+    title: "Blue Utility pouch mini",
+    description: "Blue mini utility pouch made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 6.5 x 4 x 1.5 inches.",
     image: "/images/Bluebox1.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -53,7 +49,6 @@ const PRODUCTS: Product[] = [
     id: "5",
     title: "bluelapbag",
     description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
     image: "/images/bluelapbag1.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -61,9 +56,8 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "6",
-    title: "combobox",
-    description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
+    title: "Utility pouch mini",
+    description: "A mini utility pouch made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 6.5 x 4 x 1.5 inches.",
     image: "/images/combobox1.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -71,9 +65,8 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "7",
-    title: "Greybag",
-    description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
+    title: "Laptop Grey",
+    description: "Laptop bag made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
     image: "/images/Greybag1.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -81,19 +74,17 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "8",
-    title: "IMG_20250430_152315",
-    description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
-    image: "/images/IMG_20250430_152315.webp",
+    title: "Utility pouch mini",
+    description: "A mini utility pouch made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 6.5 x 4 x 1.5 inches.",
+    image: "/images/utilitypouch1.webp",
     category: "General",
     tags: ["Eco-friendly"],
-    variants: ["/images/IMG_20250430_152315.webp"],
+    variants: ["/images/utilitypouch1.webp","/images/utilitypouch2.webp","/images/utilitypouch3.webp","/images/utilitypouch4.webp"],
   },
   {
     id: "9",
-    title: "K File s",
+    title: "Laptop ",
     description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
     image: "/images/K File s.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -101,19 +92,17 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "10",
-    title: "NAVI H",
-    description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
-    image: "/images/NAVI H.webp",
+    title: "Laptop Navi blue",
+    description: "Washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
+    image: "/images/NAVY H.webp",
     category: "General",
     tags: ["Eco-friendly"],
     variants: ["/images/NAVI H.webp"],
   },
   {
     id: "11",
-    title: "purplebag",
-    description: "Eco friendly product with sustainable materials.",
-    price: 19.99,
+    title: "Laptop Maroon",
+    description: "Stylish laptop bag made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
     image: "/images/purplebag1.webp",
     category: "General",
     tags: ["Eco-friendly"],
@@ -215,10 +204,6 @@ export default function ProductDetailPage() {
               {product.title}
             </h1>
 
-            {/* Price */}
-            <div className="text-2xl font-semibold text-eco-green-700">
-              ${product.price}
-            </div>
 
             {/* Description */}
             <div className="space-y-4">
@@ -312,7 +297,7 @@ export default function ProductDetailPage() {
                   <h3 className="font-semibold text-eco-green-800 mb-1 group-hover:text-eco-green-600">
                     {relatedProduct.title}
                   </h3>
-                  <p className="text-sm text-gray-600">${relatedProduct.price}</p>
+                  <p className="text-sm text-gray-600">Quotation on whatsapp</p>
                 </div>
               </Link>
             ))}

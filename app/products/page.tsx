@@ -8,7 +8,7 @@ import ProductCard from "../../components/productCard";
 const PRODUCTS = [
   {
     id: "1",
-    title: "B File",
+    title: "Blue bag",
     description: "Eco friendly product with sustainable materials.",
     price: 19.99,
     image: "/images/B File.webp",
@@ -18,17 +18,17 @@ const PRODUCTS = [
 
   {
     id: "3",
-    title: "Bluebag",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Laptop Blue",
+    description: "Laptop blue bag made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
     price: 19.99,
-    image: "/images/Bluebag1.webp",
+    image: "/images/Bluebag3.webp",
     category: "General",
     tags: ["Eco-friendly"],
   },
   {
     id: "4",
-    title: "Bluebox",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Blue Utility pouch mini",
+    description: "Blue mini utility pouch made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 6.5 x 4 x 1.5 inches.",
     price: 19.99,
     image: "/images/Bluebox1.webp",
     category: "General",
@@ -45,8 +45,8 @@ const PRODUCTS = [
   },
   {
     id: "6",
-    title: "combobox",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Utility pouch mini",
+    description: "A mini utility pouch made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 6.5 x 4 x 1.5 inches.",
     price: 19.99,
     image: "/images/combobox1.webp",
     category: "General",
@@ -54,8 +54,8 @@ const PRODUCTS = [
   },
   {
     id: "7",
-    title: "Greybag",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Laptop Grey",
+    description: "Stylish grey laptop bag made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
     price: 19.99,
     image: "/images/Greybag1.webp",
     category: "General",
@@ -63,10 +63,10 @@ const PRODUCTS = [
   },
   {
     id: "8",
-    title: "IMG_20250430_152315",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Utility pouch mini",
+    description: "A mini utility pouch made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 6.5 x 4 x 1.5 inches.",
     price: 19.99,
-    image: "/images/IMG_20250430_152315.webp",
+    image: "/images/utilitypouch1.webp",
     category: "General",
     tags: ["Eco-friendly"],
   },
@@ -81,8 +81,8 @@ const PRODUCTS = [
   },
   {
     id: "10",
-    title: "NAVI H",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Laptop Navi blue",
+    description: "Washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
     price: 19.99,
     image: "/images/NAVI H.webp",
     category: "General",
@@ -91,8 +91,8 @@ const PRODUCTS = [
 
   {
     id: "11",
-    title: "purplebag",
-    description: "Eco friendly product with sustainable materials.",
+    title: "Laptop Maroon",
+    description: "Stylish laptop bag made from washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
     price: 19.99,
     image: "/images/purplebag1.webp",
     category: "General",
