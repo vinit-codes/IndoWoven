@@ -200,6 +200,18 @@ export default function Footer() {
                   >
                     +91 8102294842
                   </a>
+                  <a
+                    href="tel:+917070653591"
+                    className="text-eco-brown-200 hover:text-white transition-colors block"
+                  >
+                    +91 7070653591
+                  </a>
+                  <a
+                    href="tel:+917003837949"
+                    className="text-eco-brown-200 hover:text-white transition-colors block"
+                  >
+                    +91 7003837949
+                  </a>
                 </div>
               </li>
               <li className="flex items-start">
@@ -224,7 +236,7 @@ export default function Footer() {
                   />
                 </svg>
                 <span className="text-eco-brown-200">
-                  Bhubaneswar, Odisha, India
+                  Kolkata, WestBengal, India
                 </span>
               </li>
             </ul>

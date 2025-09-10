@@ -17,9 +17,9 @@ export default function AboutPage() {
     },
     {
       name: "Vineeth Kundu",
-      role: "Marketting, Product Development & Export Operations",
+      role: "Marketting, Product Development",
       desc: "Leads marketing strategies, branding, and digital presence while also developing and maintaining the company’s social platforms to ensure a strong market identity and seamless online experience. 2nd-year B.Tech Computer Science student at Silicon University, Bhubaneswar.",
-      img: "/images/Vinit.jpg",
+      img: "/images/vinit.jpg",
     },
     {
       name: "Md Arquam Sayeed",

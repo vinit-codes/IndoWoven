@@ -83,7 +83,7 @@ export default function ContactPage() {
                     Email
                   </h4>
                   <p className="text-sm text-gray-600">
-                    wildnwoven101@gmail.com
+                   exports@indowoven.com
                   </p>
                 </div>
               </div>
@@ -111,6 +111,8 @@ export default function ContactPage() {
                   </h4>
                   <p className="text-sm text-gray-600">+91 7682887844</p>
                   <p className="text-sm text-gray-600">+91 8102294842</p>
+                  <p className="text-sm text-gray-600">+91 7070653591</p>
+                  <p className="text-sm text-gray-600">+91 7003837949</p>
         
                 </div>
               </div>
