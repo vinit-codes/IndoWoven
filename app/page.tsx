@@ -31,10 +31,10 @@ export default function Home() {
                 Explore Export Collection
               </Link>
               <Link
-                href="/contact"
+                href="/mockups"
                 className="btn-secondary text-center w-full sm:w-auto"
               >
-                Request a Quote
+                See our AI mockups 
               </Link>
             </div>
           </div>
