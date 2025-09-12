@@ -9,7 +9,7 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/newback.png"
+            src="/images/background.webp"
             alt="Premium Eco-Friendly Jute & Canvas Bags for Export"
             fill
             className="object-cover"

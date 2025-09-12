@@ -44,7 +44,7 @@ export default function AboutPage() {
         </p>
         <div className="mt-8 relative w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl">
           <Image
-            src="/images/back3.png"
+            src="/images/background.webp"
             alt="IndoWoven Impact"
             fill
             className="object-cover"
