@@ -81,10 +81,10 @@ const PRODUCTS = [
   },
   {
     id: "10",
-    title: "Laptop Navi blue",
+    title: "Laptop Navy blue",
     description: "Washed, dyed and smoothened jute/burlap with premium vintage hunter leather accents. Fitted with export-quality hardware and a long-lasting durable YKK zipper. Dimensions: 14.5 x 10 x 2.5 inches.",
     price: 19.99,
-    image: "/images/NAVI H.webp",
+    image: "/images/navy.webp",
     category: "General",
     tags: ["Eco-friendly"],
   },

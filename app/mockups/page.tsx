@@ -7,8 +7,8 @@ import MockupProductCard from "../../components/mockupProductCard";
 const PRODUCTS = [
 
   {
-    id: "eco-giftkit-2",
-    title: "Light colour gift kit",
+    id: "1",
+    title: "Corporate Gifting Kit-1",
     description: "Eco friendly gift kit with premium sustainable products.",
     price: 21.99,
     image: "/images/giftkit2.png",
@@ -16,8 +16,8 @@ const PRODUCTS = [
     tags: ["Gift", "Kit", "Premium"],
   },
   {
-    id: "eco-giftkit-3",
-    title: "Gift Kit ",
+    id: "2",
+    title: "Corporate Gifting Kit-1 ",
     description: "kit with a variety of eco-friendly items.",
     price: 22.99,
     image: "/images/gitft kit3.png",
@@ -25,7 +25,7 @@ const PRODUCTS = [
     tags: ["Gift", "Kit", "Variety"],
   },
   {
-    id: "eco-jutefile-1",
+    id: "3",
     title: "Premium Jute File",
     description: "made by talented artisans",
     price: 8.99,
@@ -34,7 +34,7 @@ const PRODUCTS = [
     tags: ["Jute", "File", "Eco-friendly"],
   },
   {
-    id: "eco-jutefile-2",
+    id: "4",
     title: "Hand crafted jute File",
     description:
       "Eco-friendly jute file for office and school use to keep your files safely.",
@@ -44,7 +44,7 @@ const PRODUCTS = [
     tags: ["Jute", "File", "Office"],
   },
   {
-    id: "eco-jutefile-3",
+    id: "eco-jutefiles-3",
     title: "Jute File 3",
     description: "Premium jute file for sustainable organization.",
     price: 9.99,
